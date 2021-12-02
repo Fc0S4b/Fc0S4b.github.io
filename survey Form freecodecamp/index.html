@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Formt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="caja">
+                <h1 id="title">Encuesta Gatuna</h1>
+                <p id="description">Queremos saber más sobre tu gatito</p>
+            </div>
+        </header>
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <p></p>
+                <label id="name-label" for="name">Tu nombre</label><input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required/>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label><input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-cat" for="number-cat">¿Cuántos gatos tiene usted?</label><input type="number" name="number-cat" id="number-cat" class="form-control" placeholder="gatos" min="0" max="1000">
+            </div>
+            <div class="form-group">
+                <p>¿Cuál opción describe mejor a tu gato favorito?</p><select id="dropdown" name="tipo" class="form-control" required><option disabled selected value>Selecciona característica principal</option>
+                <option value="Gordito">Gordito</option>
+                <option value="Esponjoso">Esponjoso</option><option value="Esbelto">Esbelto</option><option value="Esquivo">Esquivo</option><option value="Cariñoso">Cariñoso</option><option value="Rabioso">Rabioso</option><option value="otro">Otro</option></select>
+            </div>
+            <div class="form-group">
+                <p>¿A qué se dedica su gato la mayor parte del día?</p>
+                <label>
+                    <input 
+                    name="dedicacion"
+                    value="dormir"
+                    type= "radio"
+                    class="input-radio"
+                    checked/>Dormir
+                </label>
+                <label>
+                    <input 
+                    name="dedicacion"
+                    value="Comer"
+                    type= "radio"
+                    class="input-radio"
+                    />Cormer
+                </label>
+                <label>
+                    <input 
+                    name="dedicacion"
+                    value="Jugar"
+                    type= "radio"
+                    class="input-radio"
+                    />Jugar
+                </label>
+                <label>
+                    <input 
+                    name="dedicacion"
+                    value="Cazar"
+                    type= "radio"
+                    class="input-radio"
+                    />Cazar
+                </label>
+                <label>
+                    <input 
+                    name="dedicacion"
+                    value="Pelear"
+                    type= "radio"
+                    class="input-radio"
+                    />Pelear
+                </label>
+                <label>
+                    <input 
+                    name="dedicacion"
+                    value="Otro"
+                    type= "radio"
+                    class="input-radio"
+                    />Otro
+                </label>
+            </div>
+            <div class="form-group">
+                <p>¿Que marca prefiere de alimento?</p>
+                <select id="marca" name="marca" class="form-control" required><option disabled selected value>Selecciona una opción</option><option value="mininosPro">MininosPro</option><option value="AlimentoCat">AlimentoCat</option><option value="GatosFelices">GatosFelices</option><option value="Otro">Otro</option></select>
+            </div>
+            <div class="form-group">
+                <p>¿Qué le hace falta a tu gato? <span class="marcar">(elige las opciones que apliquen)</span></p>
+                <label> <input name="juguetes" value="Nuevos-juguetes" type="checkbox" class="input-checkbox"/>Nuevos juguetes</label>
+                <label> <input name="juguetes" value="Otra-comida" type="checkbox" class="input-checkbox"/>Otra comida</label>
+                <label> <input name="juguetes" value="Una-casita" type="checkbox" class="input-checkbox"/>Una casita</label>
+                <label> <input name="juguetes" value="Baño" type="checkbox" class="input-checkbox"/>Un nuevo baño</label>
+                <label> <input name="juguetes" value="antipulgas" type="checkbox" class="input-checkbox"/>Collar antipulgas</label>
+                <label> <input name="juguetes" value="Otro-gato" type="checkbox" class="input-checkbox"/>Otro gato</label>
+                <label> <input type="text" name="Otro" id="Otro" class="form-control" placeholder="Ingresa otra opción" />Otro</label>
+            </div>
+            <div class="form-group">
+                <p>Haz una breve descripción de tu gato</p><textarea id="comentarios" class="input-textarea" name="comentarios" placeholder="Ingresa tu descripción aquí"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+            Enviar</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
